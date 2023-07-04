@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-comp-e2e-eijj-tenant/mc-quality-dashboard/backend-quality-dashboard@sha256:54fcd94070c1f51d83fb2bf8eb5767c315298c9125fe52ed765e81b0bc361655
+        name: container-image
+        resources: {}
+status: {}
